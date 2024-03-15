@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "Np0pm473bgkTyet4qdHK57diZMp3Gb2hfPVAZYdWxQc=",
+  "Source": "Boba",
+  "BasePath": "_content/Boba",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Boba\\wwwroot",
+      "Source": "Boba",
+      "ContentRoot": "D:\\Project\\Boba\\wwwroot\\",
+      "BasePath": "_content/Boba",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Project\\Boba\\wwwroot\\index.html",
+      "SourceId": "Boba",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Boba\\wwwroot\\",
+      "BasePath": "_content/Boba",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Test CORS</title>
+</head>
+<body>
+    <button id="btn" value="Who will save the world?">Who will save the world?</button>
+    <h2 id="result"></h2>
+    
+
+    <script>
+        const btn = document.getElementById("btn");
+        const result = document.getElementById("result");
+        btn.addEventListener("click", async () => {
+            try {
+                const response = await fetch("https://localhost:7180/");
+                if (response.ok) {
+                    const headerTitle = "custom-header"; // название заголовка
+                    result.innerText = await response.text();
+                    if (response.headers.has(headerTitle)) {  // если заголовок есть
+                        console.log(response.headers.get(headerTitle));     // получаем его значение
+                    }
+                }
+            }
+            catch (e) {
+                result.innerText = e.message;
+            }
+        });
+    </script>
+</body>
+</html>
